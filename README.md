@@ -25,7 +25,8 @@ To analyse the sales data provided to better understand the company performance 
 - Step 8 : A set of base measures/key metric (Sales, Quantity, Gross Profit) was created for later use.
 - Step 9 : Created a new table to hold the slicer labels for each key metric.
 - Step 10 : In order to do a year to year performance comparison, YTD and PYTD measures were created.
-"
+
+""
 
     PYTD_Gross_Profit = 
         CALCULATE(
@@ -37,7 +38,8 @@ To analyse the sales data provided to better understand the company performance 
 
 - Step 11 : The above PYTD formula was reused to formulate the PYTD for Sales and Quantity.
 - Step 12 : The YTD measures were also created with the following DAX formula:-
-"
+  
+""
 
     YTD_Gross_Profit = 
         TOTALYTD(
@@ -47,7 +49,8 @@ To analyse the sales data provided to better understand the company performance 
 
 - Step 13 : The above YTD formula was also reused to formulate the measure for YTD Sales and Quantity. 
 - Step 14 : In order for the slicers to function dynamically as per my intention, a measure was for PYTD and YTD were created for the slicers.
-"
+
+""
 
     PYTD_SLICED = 
     VAR selectedvalues = SELECTEDVALUE(Slicer_values[Values])
